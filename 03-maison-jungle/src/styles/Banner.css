@@ -1,0 +1,24 @@
+.lmj-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  padding: 28px 20px;
+  background: #1F3D2B;
+  color: #fff;
+}
+.lmj-logo { height: 72px; width: 72px; }
+.lmj-title {
+  margin: 0;
+  font-family: 'Fraunces', Georgia, serif;
+  font-size: 34px;
+}
+.lmj-signature { margin: 4px 0 0; color: #BFE3C7; font-size: 15px; }
+
+body {
+  margin: 0;
+  font-family: 'Nunito', system-ui, sans-serif;
+  color: #1F3D2B;
+  background: #F3F8F4;
+}
+* { box-sizing: border-box; }

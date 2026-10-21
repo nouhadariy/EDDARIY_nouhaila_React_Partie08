@@ -1,0 +1,103 @@
+.lmj-shopping-list {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 24px;
+  padding: 24px 32px 48px;
+  align-items: start;
+}
+
+.lmj-categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  list-style: none;
+  margin: 0 0 16px;
+  padding: 0;
+}
+.lmj-cat-btn {
+  font: inherit;
+  font-weight: 700;
+  text-transform: capitalize;
+  background: #fff;
+  color: #1F3D2B;
+  border: 2px solid #4FA86A;
+  border-radius: 99px;
+  padding: 6px 18px;
+  cursor: pointer;
+  transition: background .15s, color .15s;
+}
+.lmj-cat-btn:hover { background: #E3F3E7; }
+.lmj-cat-btn.active { background: #1F3D2B; color: #fff; border-color: #1F3D2B; }
+
+.lmj-plant-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Panier */
+.lmj-cart {
+  position: sticky;
+  top: 16px;
+  background: #fff;
+  border-radius: 24px;
+  padding: 20px;
+  border: 2px solid #CFE8D5;
+}
+.lmj-cart-title {
+  margin: 0 0 12px;
+  font-family: 'Fraunces', Georgia, serif;
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.lmj-cart-count {
+  background: #F4B63A;
+  color: #1F3D2B;
+  border-radius: 99px;
+  font-family: 'Nunito', system-ui, sans-serif;
+  font-size: 14px;
+  padding: 2px 10px;
+}
+.lmj-cart-empty { color: #5E7A68; margin: 0; }
+.lmj-cart-list { list-style: none; margin: 0; padding: 0; }
+.lmj-cart-line {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  gap: 8px;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px dashed #CFE8D5;
+  text-transform: capitalize;
+}
+.lmj-qty { display: inline-flex; align-items: center; gap: 6px; font-weight: 700; }
+.lmj-qty button {
+  width: 24px; height: 24px;
+  border-radius: 50%;
+  border: 1px solid #4FA86A;
+  background: #fff;
+  cursor: pointer;
+  font-weight: 700;
+}
+.lmj-line-total { font-weight: 700; min-width: 56px; text-align: right; }
+.lmj-total { font-size: 18px; margin: 14px 0; }
+.lmj-clear-btn {
+  width: 100%;
+  font: inherit;
+  font-weight: 700;
+  background: transparent;
+  border: 2px solid #D96B6B;
+  color: #B04E4E;
+  border-radius: 12px;
+  padding: 8px;
+  cursor: pointer;
+}
+.lmj-clear-btn:hover { background: #FBECEC; }
+
+@media (max-width: 900px) {
+  .lmj-shopping-list { grid-template-columns: 1fr; padding: 16px; }
+  .lmj-cart { position: static; }
+}

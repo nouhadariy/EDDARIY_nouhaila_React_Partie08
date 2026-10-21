@@ -1,0 +1,66 @@
+/* Classes fournies dans l'atelier */
+.lmj-plant-item-cover {
+  height: 220px;
+  width: 220px;
+  border-radius: 20px;
+}
+
+.lmj-plant-item {
+  margin: 10px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  text-transform: capitalize;
+}
+
+/* Petites touches en plus */
+.lmj-plant-item {
+  padding: 12px;
+  background: #fff;
+  border-radius: 28px;
+  font-weight: 700;
+  font-size: 18px;
+  gap: 6px;
+  transition: transform .2s;
+}
+.lmj-plant-item:hover { transform: translateY(-4px); }
+.lmj-care-scale { display: flex; gap: 2px; min-height: 24px; }
+.lmj-care-scale img { height: 22px; width: 22px; }
+
+.lmj-cover-wrap { position: relative; }
+.lmj-best-sale {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #F4B63A;
+  color: #1F3D2B;
+  font-size: 12px;
+  border-radius: 99px;
+  padding: 3px 10px;
+}
+
+.lmj-buy-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  width: 100%;
+  margin-top: 4px;
+}
+.lmj-price { font-family: 'Fraunces', Georgia, serif; font-size: 20px; }
+.lmj-add-btn {
+  font: inherit;
+  font-size: 14px;
+  font-weight: 700;
+  background: #2F7D4F;
+  color: #fff;
+  border: none;
+  border-radius: 99px;
+  padding: 8px 14px;
+  cursor: pointer;
+  transition: background .15s, transform .15s;
+}
+.lmj-add-btn:hover { background: #1F3D2B; }
+.lmj-add-btn:active { transform: scale(.95); }
+.lmj-add-btn.lmj-added { background: #F4B63A; color: #1F3D2B; }
